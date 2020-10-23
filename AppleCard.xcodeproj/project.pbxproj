@@ -21,6 +21,7 @@
 		8DF43E1D2457D1F900E6F295 /* CucumberishInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF43E1C2457D1F900E6F295 /* CucumberishInitializer.swift */; };
 		9197960898DDD5E907588BE6 /* Pods_AppleCard_AppleCardAcceptanceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F19FF60A6887810F1E4E3B /* Pods_AppleCard_AppleCardAcceptanceTests.framework */; };
 		922C041F2543269300D01AD2 /* UnderAgeApplyingCardSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922C041E2543269300D01AD2 /* UnderAgeApplyingCardSteps.swift */; };
+		92465EEC25432BCE00F206CC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 92465EEB25432BCE00F206CC /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		8DF43E1B2457D1F800E6F295 /* AppleCardAcceptanceTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppleCardAcceptanceTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		8DF43E1C2457D1F900E6F295 /* CucumberishInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CucumberishInitializer.swift; sourceTree = "<group>"; };
 		922C041E2543269300D01AD2 /* UnderAgeApplyingCardSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderAgeApplyingCardSteps.swift; sourceTree = "<group>"; };
+		92465EEB25432BCE00F206CC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		95723288CFEB7E3FBFD6248F /* Pods-AppleCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleCard.release.xcconfig"; path = "Target Support Files/Pods-AppleCard/Pods-AppleCard.release.xcconfig"; sourceTree = "<group>"; };
 		A70209FAC655E875010E4B26 /* Pods_AppleCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppleCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8DB726A9657F86C1DD02DB1 /* Pods-AppleCard-AppleCardAcceptanceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleCard-AppleCardAcceptanceTests.debug.xcconfig"; path = "Target Support Files/Pods-AppleCard-AppleCardAcceptanceTests/Pods-AppleCard-AppleCardAcceptanceTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		8DB7E3C22457D08900516433 = {
 			isa = PBXGroup;
 			children = (
+				92465EEB25432BCE00F206CC /* README.md */,
 				8DB7E3CD2457D08900516433 /* AppleCard */,
 				8DB7E3E72457D0DE00516433 /* AppleCardAcceptanceTests */,
 				8DB7E3F52457D0E900516433 /* AppleCardUITests */,
@@ -364,6 +367,7 @@
 			files = (
 				8DB7E3DB2457D08B00516433 /* LaunchScreen.storyboard in Resources */,
 				8DB7E3D82457D08B00516433 /* Preview Assets.xcassets in Resources */,
+				92465EEC25432BCE00F206CC /* README.md in Resources */,
 				8DB7E3D52457D08B00516433 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
