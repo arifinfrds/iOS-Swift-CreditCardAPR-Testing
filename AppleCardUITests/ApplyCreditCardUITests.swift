@@ -10,32 +10,27 @@ import XCTest
 
 
 class When_Below_18_person_applies_credit_card: XCTestCase {
+    private var app: XCUIApplication!
+    private var applyCreditCardPage: ApplyCreditCardPage!
+    
+    override func setUp() {
+        self.app = XCUIApplication()
+        self.app.launch()
+        self.applyCreditCardPage = ApplyCreditCardPage(app: app)
+    }
   
     func test_should_show_denined_message_on_label() {
-        let app = XCUIApplication()
-        app.launch()
-        
         let name = "Arifin Firdaus"
         let ssn = "123-23-2223"
         let dateOfBirth = "02-12-2019"
         
-        let nameTextField = app.textFields["nameTextField"]
-        nameTextField.tap()
-        nameTextField.typeText(name + "\n")
+        applyCreditCardPage.fillName(text: name)
+        applyCreditCardPage.fillSsn(text: ssn)
+        applyCreditCardPage.fillDob(dob: dateOfBirth)
         
-        let ssnTextField = app.textFields["ssnTextField"]
-        ssnTextField.tap()
-        ssnTextField.typeText(ssn + "\n")
+        applyCreditCardPage.tapApplyButton()
         
-        let dateOfBirthTextField = app.textFields["dobTextField"]
-        dateOfBirthTextField.tap()
-        dateOfBirthTextField.typeText(dateOfBirth + "\n")
-        
-        
-        app.buttons["applyButton"].tap()
-        
-        
-        let messageLabel = app.staticTexts["messageLabel"]
+        let messageLabel = applyCreditCardPage.getMessageLabel()
         
         XCTAssertEqual(messageLabel.label, "Denied: Underage")
     }
