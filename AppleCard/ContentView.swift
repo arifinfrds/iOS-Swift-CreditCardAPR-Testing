@@ -9,28 +9,25 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var name: String = ""
-    @State private var ssn: String = ""
-    @State private var dob: String = ""
-    @State private var message: String = ""
+    @ObservedObject var viewModel = ApplyCreditCardViewModel()
     
     var body: some View {
         NavigationView {
             VStack {
-                TextField("Enter a task", text: $name)
+                TextField("Enter a task", text: $viewModel.name)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .accessibility(identifier: "nameTextField")
                 
-                TextField("Enter ssn", text: $ssn)
+                TextField("Enter ssn", text: $viewModel.ssn)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .accessibility(identifier: "ssnTextField")
                 
-                TextField("Enter dob", text: $dob)
+                TextField("Enter dob", text: $viewModel.dob)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .accessibility(identifier: "dobTextField")
                 
                 Button("Apply") {
-                    
+                    self.viewModel.apply()
                 }
                 .accessibility(identifier: "applyButton")
                 .frame(width: 100, height: 44, alignment: .center)
@@ -40,7 +37,7 @@ struct ContentView: View {
                 .foregroundColor(.white)
                 .font(Font.system(size: 17, weight: .semibold, design: .default))
                 
-                Text("\(message)")
+                Text(viewModel.message)
                     .accessibility(identifier: "messageLabel")
                 Spacer()
             }

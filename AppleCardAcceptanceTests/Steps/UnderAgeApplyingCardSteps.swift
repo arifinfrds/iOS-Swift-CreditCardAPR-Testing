@@ -44,7 +44,7 @@ class UnderAgeApplyingCardSteps {
         
         Then("I should get a rejection message") { (_, _) in
             let messageLabel = XCUIApplication().staticTexts["messageLabel"]
-            XCTAssertEqual(messageLabel.label, "Denied: underage")
+            XCTAssertEqual(messageLabel.label, "Denied: Underage")
         }
     }
 }
