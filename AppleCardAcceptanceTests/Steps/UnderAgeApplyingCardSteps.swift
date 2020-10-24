@@ -17,7 +17,7 @@ class UnderAgeApplyingCardSteps {
             XCUIApplication().launch()
             
             let rows: NSArray = userInfo?["DataTable"] as! NSArray
-            for index in 0..<rows.count {
+            for index in 1..<rows.count {
                 let data = (rows[index] as! NSArray)
                 let name = data[0] as! String
                 let ssn = data[1] as! String
@@ -31,7 +31,7 @@ class UnderAgeApplyingCardSteps {
                 ssnTextField.tap()
                 ssnTextField.typeText(ssn + "\n")
                 
-                let dateOfBirthTextField = XCUIApplication().textFields["dateOfBirthTextField"]
+                let dateOfBirthTextField = XCUIApplication().textFields["dobTextField"]
                 dateOfBirthTextField.tap()
                 dateOfBirthTextField.typeText(dateOfBirth + "\n")
             }
