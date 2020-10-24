@@ -26,6 +26,7 @@
 		92306B52254456C9009DA250 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92306B51254456C9009DA250 /* UserTests.swift */; };
 		9240BEA325445DC9003C8292 /* ApplyCreditCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240BEA225445DC9003C8292 /* ApplyCreditCardUITests.swift */; };
 		9240BEC1254460BA003C8292 /* ApplyCreditCardPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240BEC0254460BA003C8292 /* ApplyCreditCardPage.swift */; };
+		9240BED4254463B8003C8292 /* ApplyCreditCardPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240BEC0254460BA003C8292 /* ApplyCreditCardPage.swift */; };
 		92465EEC25432BCE00F206CC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 92465EEB25432BCE00F206CC /* README.md */; };
 		9284B06C25445318007A3C03 /* ApplyCreditCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9284B06B25445318007A3C03 /* ApplyCreditCardViewModel.swift */; };
 		9284B073254453C4007A3C03 /* ApplyCreditCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9284B072254453C4007A3C03 /* ApplyCreditCardViewModel.swift */; };
@@ -630,6 +631,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9240BED4254463B8003C8292 /* ApplyCreditCardPage.swift in Sources */,
 				8DF43E1A2457D1C900E6F295 /* CucumberishLoader.m in Sources */,
 				922C041F2543269300D01AD2 /* UnderAgeApplyingCardSteps.swift in Sources */,
 				8DF43E1D2457D1F900E6F295 /* CucumberishInitializer.swift in Sources */,

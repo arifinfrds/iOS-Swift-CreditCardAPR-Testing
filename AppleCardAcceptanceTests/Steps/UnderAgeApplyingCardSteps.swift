@@ -11,6 +11,13 @@ import Cucumberish
 import XCTest
 
 class UnderAgeApplyingCardSteps {
+    private let app: XCUIApplication
+    private let page: ApplyCreditCardPage
+    
+    init() {
+        app = XCUIApplication()
+        page = ApplyCreditCardPage(app: app)
+    }
     
     func run() {
         Given("the following user information") { (args, userInfo) in
@@ -23,27 +30,19 @@ class UnderAgeApplyingCardSteps {
                 let ssn = data[1] as! String
                 let dateOfBirth = data[2] as! String
                 
-                let nameTextField = XCUIApplication().textFields["nameTextField"]
-                nameTextField.tap()
-                nameTextField.typeText(name + "\n")
-                
-                let ssnTextField = XCUIApplication().textFields["ssnTextField"]
-                ssnTextField.tap()
-                ssnTextField.typeText(ssn + "\n")
-                
-                let dateOfBirthTextField = XCUIApplication().textFields["dobTextField"]
-                dateOfBirthTextField.tap()
-                dateOfBirthTextField.typeText(dateOfBirth + "\n")
+                self.page.fillName(text: name)
+                self.page.fillSsn(text: ssn)
+                self.page.fillDob(dob: dateOfBirth)
             }
             
         }
         
         When("I press the apply button") { (_, _) in
-            XCUIApplication().buttons["applyButton"].tap()
+            self.page.tapApplyButton()
         }
         
         Then("I should get a rejection message") { (_, _) in
-            let messageLabel = XCUIApplication().staticTexts["messageLabel"]
+            let messageLabel = self.page.getMessageLabel()
             XCTAssertEqual(messageLabel.label, "Denied: Underage")
         }
     }
