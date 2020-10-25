@@ -20,6 +20,7 @@
 		8DF43E1A2457D1C900E6F295 /* CucumberishLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF43E192457D1C900E6F295 /* CucumberishLoader.m */; };
 		8DF43E1D2457D1F900E6F295 /* CucumberishInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF43E1C2457D1F900E6F295 /* CucumberishInitializer.swift */; };
 		9197960898DDD5E907588BE6 /* Pods_AppleCard_AppleCardAcceptanceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F19FF60A6887810F1E4E3B /* Pods_AppleCard_AppleCardAcceptanceTests.framework */; };
+		920235EE254534B000633976 /* CreditCardAPRSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920235ED254534B000633976 /* CreditCardAPRSteps.swift */; };
 		922C041F2543269300D01AD2 /* UnderAgeApplyingCardSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922C041E2543269300D01AD2 /* UnderAgeApplyingCardSteps.swift */; };
 		92306A91254454B0009DA250 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92306A90254454B0009DA250 /* User.swift */; };
 		92306A9825445637009DA250 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92306A9725445637009DA250 /* String+Date.swift */; };
@@ -28,8 +29,13 @@
 		9240BEC1254460BA003C8292 /* ApplyCreditCardPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240BEC0254460BA003C8292 /* ApplyCreditCardPage.swift */; };
 		9240BED4254463B8003C8292 /* ApplyCreditCardPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240BEC0254460BA003C8292 /* ApplyCreditCardPage.swift */; };
 		92465EEC25432BCE00F206CC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 92465EEB25432BCE00F206CC /* README.md */; };
+		92716ACA25454B58009508E4 /* CreditCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92716AC925454B58009508E4 /* CreditCardTests.swift */; };
+		92716ADA25454DE0009508E4 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92716AD925454DE0009508E4 /* CreditCard.swift */; };
 		9284B06C25445318007A3C03 /* ApplyCreditCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9284B06B25445318007A3C03 /* ApplyCreditCardViewModel.swift */; };
 		9284B073254453C4007A3C03 /* ApplyCreditCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9284B072254453C4007A3C03 /* ApplyCreditCardViewModel.swift */; };
+		92D3BD59254541B50078B6FC /* CreditScoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D3BD58254541B50078B6FC /* CreditScoreService.swift */; };
+		92D3BD63254541C70078B6FC /* CreditScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D3BD62254541C70078B6FC /* CreditScore.swift */; };
+		92D3BD74254548C70078B6FC /* MockCreditCardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D3BD73254548C70078B6FC /* MockCreditCardService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +87,7 @@
 		8DF43E192457D1C900E6F295 /* CucumberishLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CucumberishLoader.m; sourceTree = "<group>"; };
 		8DF43E1B2457D1F800E6F295 /* AppleCardAcceptanceTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppleCardAcceptanceTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		8DF43E1C2457D1F900E6F295 /* CucumberishInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CucumberishInitializer.swift; sourceTree = "<group>"; };
+		920235ED254534B000633976 /* CreditCardAPRSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardAPRSteps.swift; sourceTree = "<group>"; };
 		922C041E2543269300D01AD2 /* UnderAgeApplyingCardSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderAgeApplyingCardSteps.swift; sourceTree = "<group>"; };
 		92306A90254454B0009DA250 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		92306A9725445637009DA250 /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
@@ -89,9 +96,14 @@
 		9240BEAC25445E48003C8292 /* AppleCardUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppleCardUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		9240BEC0254460BA003C8292 /* ApplyCreditCardPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyCreditCardPage.swift; sourceTree = "<group>"; };
 		92465EEB25432BCE00F206CC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		92716AC925454B58009508E4 /* CreditCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardTests.swift; sourceTree = "<group>"; };
+		92716AD925454DE0009508E4 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
 		9284B06A25445318007A3C03 /* AppleCardTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppleCardTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		9284B06B25445318007A3C03 /* ApplyCreditCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyCreditCardViewModel.swift; sourceTree = "<group>"; };
 		9284B072254453C4007A3C03 /* ApplyCreditCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyCreditCardViewModel.swift; sourceTree = "<group>"; };
+		92D3BD58254541B50078B6FC /* CreditScoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreService.swift; sourceTree = "<group>"; };
+		92D3BD62254541C70078B6FC /* CreditScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScore.swift; sourceTree = "<group>"; };
+		92D3BD73254548C70078B6FC /* MockCreditCardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCreditCardService.swift; sourceTree = "<group>"; };
 		95723288CFEB7E3FBFD6248F /* Pods-AppleCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleCard.release.xcconfig"; path = "Target Support Files/Pods-AppleCard/Pods-AppleCard.release.xcconfig"; sourceTree = "<group>"; };
 		A70209FAC655E875010E4B26 /* Pods_AppleCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppleCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8DB726A9657F86C1DD02DB1 /* Pods-AppleCard-AppleCardAcceptanceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleCard-AppleCardAcceptanceTests.debug.xcconfig"; path = "Target Support Files/Pods-AppleCard-AppleCardAcceptanceTests/Pods-AppleCard-AppleCardAcceptanceTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +176,7 @@
 		8DB7E3CD2457D08900516433 /* AppleCard */ = {
 			isa = PBXGroup;
 			children = (
+				92D3BD57254541A70078B6FC /* Services */,
 				92306A962544562D009DA250 /* Extensions */,
 				92306A8B254454A2009DA250 /* Models */,
 				9284B071254453BC007A3C03 /* ViewModes */,
@@ -213,6 +226,7 @@
 		8DB7E4032457D0F300516433 /* AppleCardTests */ = {
 			isa = PBXGroup;
 			children = (
+				92D3BD72254548BD0078B6FC /* Mocks */,
 				9284B069254452DD007A3C03 /* Model */,
 				9284B068254452D6007A3C03 /* ViewModel */,
 				8DB7E4062457D0F300516433 /* Info.plist */,
@@ -224,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				922C041E2543269300D01AD2 /* UnderAgeApplyingCardSteps.swift */,
+				920235ED254534B000633976 /* CreditCardAPRSteps.swift */,
 			);
 			path = Steps;
 			sourceTree = "<group>";
@@ -232,6 +247,8 @@
 			isa = PBXGroup;
 			children = (
 				92306A90254454B0009DA250 /* User.swift */,
+				92D3BD62254541C70078B6FC /* CreditScore.swift */,
+				92716AD925454DE0009508E4 /* CreditCard.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -265,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				92306B51254456C9009DA250 /* UserTests.swift */,
+				92716AC925454B58009508E4 /* CreditCardTests.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -275,6 +293,22 @@
 				9284B072254453C4007A3C03 /* ApplyCreditCardViewModel.swift */,
 			);
 			path = ViewModes;
+			sourceTree = "<group>";
+		};
+		92D3BD57254541A70078B6FC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				92D3BD58254541B50078B6FC /* CreditScoreService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		92D3BD72254548BD0078B6FC /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				92D3BD73254548C70078B6FC /* MockCreditCardService.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		AD5EB9E250FBE8FF877A26D0 /* Pods */ = {
@@ -621,9 +655,12 @@
 				9284B073254453C4007A3C03 /* ApplyCreditCardViewModel.swift in Sources */,
 				8DB7E3CF2457D08900516433 /* AppDelegate.swift in Sources */,
 				8DB7E3D12457D08900516433 /* SceneDelegate.swift in Sources */,
+				92716ADA25454DE0009508E4 /* CreditCard.swift in Sources */,
+				92D3BD63254541C70078B6FC /* CreditScore.swift in Sources */,
 				92306A91254454B0009DA250 /* User.swift in Sources */,
 				92306A9825445637009DA250 /* String+Date.swift in Sources */,
 				8DB7E3D32457D08900516433 /* ContentView.swift in Sources */,
+				92D3BD59254541B50078B6FC /* CreditScoreService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,6 +668,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				920235EE254534B000633976 /* CreditCardAPRSteps.swift in Sources */,
 				9240BED4254463B8003C8292 /* ApplyCreditCardPage.swift in Sources */,
 				8DF43E1A2457D1C900E6F295 /* CucumberishLoader.m in Sources */,
 				922C041F2543269300D01AD2 /* UnderAgeApplyingCardSteps.swift in Sources */,
@@ -651,7 +689,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92716ACA25454B58009508E4 /* CreditCardTests.swift in Sources */,
 				92306B52254456C9009DA250 /* UserTests.swift in Sources */,
+				92D3BD74254548C70078B6FC /* MockCreditCardService.swift in Sources */,
 				9284B06C25445318007A3C03 /* ApplyCreditCardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

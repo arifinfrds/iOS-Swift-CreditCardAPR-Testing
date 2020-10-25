@@ -9,7 +9,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var viewModel = ApplyCreditCardViewModel()
+    @ObservedObject var viewModel: ApplyCreditCardViewModel
+    
+    init() {
+        viewModel = ApplyCreditCardViewModel(service: CreditScoreService())
+    }
     
     var body: some View {
         NavigationView {
